@@ -8,7 +8,17 @@ export default class Home extends Component {
         return (
             <div>
                 <div className="header">Book Store</div>
-                <div className="products">
+                <div className="products-container">
+                    <Product
+                        title="Huger makes me a modern girl"
+                        image="imgs/book-one.jpg"
+                        price="19.95"
+                    />
+                    <Product
+                        title="Huger makes me a modern girl"
+                        image="imgs/book-one.jpg"
+                        price="19.95"
+                    />
                     <Product
                         title="Huger makes me a modern girl"
                         image="imgs/book-one.jpg"
