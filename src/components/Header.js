@@ -13,7 +13,11 @@ export default class Header extends Component {
     }
 
     async getLoggedUser () {
-
+        let response = await fetch('/user')
+        response = await response.json()
+        if (Object.keys(response).length > 0) {
+            this.setState({name: response.name})
+        }
     }
 
     render () {
