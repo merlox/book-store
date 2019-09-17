@@ -3,11 +3,25 @@ import React, { Component } from 'react'
 export default class Header extends Component {
     constructor () {
         super()
+        this.state = {
+            name: '',
+        }
+    }
+
+    componentDidMount () {
+        this.getLoggedUser()
+    }
+
+    async getLoggedUser () {
+
     }
 
     render () {
         return (
-            <div className="header">Book Store</div>
+            <div className="header">
+                <div>Book Store</div>
+                <div style={{display: this.state.name.length == 0 ? 'none' : 'inline-block'}}>User logged as {this.state.name}</div>
+            </div>
         )
     }
 }
