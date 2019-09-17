@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
+import Header from './Header'
 
 export default class Home extends Component {
     constructor () {
@@ -9,7 +11,7 @@ export default class Home extends Component {
     render () {
         return (
             <div>
-                <div className="header">Book Store</div>
+                <Header />
                 <div className="products-container">
                     <Product
                         title="Hunger makes me a modern girl"
@@ -48,10 +50,7 @@ export default class Home extends Component {
                         buyProduct={(title, price) => this.props.buyProduct(title, price)}
                     />
                 </div>
-                <div className="footer">
-                    <Link to="/">Home</Link>
-                    <Link to="/about-us">About us</Link>
-                </div>
+                <Footer />
             </div>
         )
     }

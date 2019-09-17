@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "webpack --production",
     "watch": "webpack -dw",
-    "serve": "http-server dist/"
+    "serve": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +27,9 @@
     "stylus-loader": "^3.0.2",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }

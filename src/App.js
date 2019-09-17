@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import AboutUs from './components/AboutUs'
 import ProductPage from './components/ProductPage'
+import Login from './components/Login'
 import './index.styl'
 
 class App extends Component {
@@ -37,6 +38,9 @@ class App extends Component {
                             productTitle={this.state.productTitle}
                             productPrice={this.state.productPrice}
                         />
+                    )} />
+                    <Route path="/login" render={() => (
+                        <Login />
                     )} />
                 </Switch>
             </BrowserRouter>
