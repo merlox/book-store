@@ -11,7 +11,12 @@ export default class Login extends Component {
         return (
             <div>
                 <Header />
-                This is the login page
+                <div className="login-container">
+                    <h1>Login or register</h1>
+                    <p className="initial-text">Are you an existing or a new user?</p>
+                    <button>Login</button>
+                    <button>Register</button>
+                </div>
                 <Footer />
             </div>
         )
